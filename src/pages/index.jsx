@@ -1,7 +1,6 @@
-import NowPlaying from './NowPlaying'
-import Popular from './Popular'
-import TopRated from './TopRated'
-import UpComing from './UpComing' 
+import NowPlaying from "./NowPlaying";
+import Popular from "./Popular";
+import TopRated from "./TopRated";
+import UpComing from "./UpComing";
 
-
-export {NowPlaying,Popular,UpComing,TopRated}
+export {NowPlaying,Popular,TopRated,UpComing}

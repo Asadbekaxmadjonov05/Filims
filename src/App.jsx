@@ -1,17 +1,17 @@
+import React from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
 import CustomRoutes from './routes'
+import Menu from './components/Menu'
+import CustomMenu from './components/Menu'
 
-
-function App() {
- 
-
+const App = () => {
   return (
-    <>
-    <Navbar/>
-    <CustomRoutes/>
-    </>
+    <div className='flex'>
+      <CustomMenu />
+      <CustomRoutes />
+    </div>
   )
 }
 
 export default App
+

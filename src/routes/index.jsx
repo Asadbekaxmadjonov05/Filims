@@ -1,39 +1,14 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import NowPlaying from '../pages/NowPlaying'
-import Popular from '../pages/Popular'
-import TopRated from '../pages/TopRated'
-import UpComing from '../pages/UpComing'
-import { PATH } from '../hook/usePath'
+import { NowPlaying, Popular, TopRated, UpComing } from '../Pages'
 
-function CustomRoutes() {
-    const routeList = [
-        {
-            id:1,
-            path:PATH.nowPlaying,
-            element:<NowPlaying/>
-        },
-        {
-            id:2,
-            path:PATH.popular,
-            element:<Popular/>
-        },
-        {
-            id:3,
-            path:PATH.topRated,
-            element:<TopRated/>
-        },
-        {
-            id:4,
-            path:PATH.upComing,
-            element:<UpComing/>
-        },
-    ]
+export default function CustomRoutes() {
   return (
-  <Routes>
-    {routeList.map(item => <Route key={item.id} path={item.path} element={item.element}/>)}
-  </Routes>
+   <Routes>
+    <Route path='/' element={<NowPlaying/>} />
+    <Route path='/popular' element={<Popular/>} />
+    <Route path='/top-rated' element={<TopRated/>} />
+    <Route path='/up-coming' element={<UpComing/>} />
+   </Routes>
   )
 }
-
-export default CustomRoutes
